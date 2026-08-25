@@ -18,6 +18,7 @@ from app.middleware.security_headers import SecurityHeadersMiddleware
 from app.routers import (
     auth,
     file_router,
+    health_router,
     project_member_router,
     project_router,
     task_router,
@@ -42,6 +43,7 @@ app.include_router(project_router.router)
 app.include_router(project_member_router.router)
 app.include_router(task_router.router)
 app.include_router(file_router.router)
+app.include_router(health_router.router)
 
 app.add_middleware(
     CORSMiddleware,

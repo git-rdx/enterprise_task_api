@@ -18,7 +18,8 @@ class Settings(BaseSettings):
 
     ALGORITHM: str = "HS256"
 
-    FRONTEND_URL: str = "http://localhost:3000"
+    # FRONTEND_URL: str = "http://localhost:3000"
+    FRONTEND_URL: str = "http://127.0.0.1:5500"
 
     REDIS_URL: str
 

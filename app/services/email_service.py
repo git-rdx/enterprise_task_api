@@ -31,7 +31,8 @@ class EmailService:
 
     def send_verification_email(self, email: str, token: str) -> None:
 
-        verification_url = f"{settings.FRONTEND_URL}/verify-email?token={token}"
+        # verification_url = f"{settings.FRONTEND_URL}/verify-email?token={token}"
+        verification_url = f"{settings.FRONTEND_URL}/verify-email.html?token={token}"
 
         html = f"""
         <html>
